@@ -1,14 +1,27 @@
 import pandas as pd
 
+def znacajkaDaNe(colName):
+    print(colName)
+    dataVrijeme = data.groupby(colName).groups
+    for key in dataVrijeme:
+        print(key)
+        da, ne = 0, 0
+        for index in list(dataVrijeme[key]):
+            if data.values[index, 5] == 'da':
+                da += 1
+            else:
+                ne += 1
+        print("da", da)
+        print("ne", ne)
+    print("***************************")
+
 data = pd.read_csv('Igra.csv', delimiter=";")
 print(data)
 
-dataVrijeme = data.groupby(['Vrijeme', 'Igrati?']).groups
-print('Vrijeme')
-for key in dataVrijeme:
-    print(key, "-->", len(dataVrijeme[key]))
+columns = list(data)
+clumns = columns.remove('Dan')
+clumns = columns.remove('Igrati?')
+print(columns)
 
-dataTemp = data.groupby(['Temperatura', 'Igrati?']).groups
-print('Temperatura')
-for key in dataTemp:
-    print(key, "-->", len(dataTemp[key]))
+for col in columns:
+    znacajkaDaNe (col)
