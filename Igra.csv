@@ -1,0 +1,11 @@
+﻿Dan;Vrijeme;Temperatura;Vlaga;Vjetar;Igrati?
+1;sunce;visoka;visoka;slab;ne
+2;kiša;niska;visoka;jak;da
+3;oblačno;srednja;visoka;slab;ne
+4;sunce;visoka;visoka;jak;da
+5;kiša;niska;normalna;slab;ne
+6;oblačno;srednja;normalna;jak;da
+7;sunce;visoka;normalna;slab;ne
+8;kiša;visoka;normalna;jak;da
+9;oblačno;niska;visoka;jak;ne
+10;sunce;srednja;normalna;slab;da
