@@ -2,11 +2,11 @@ import pandas as pd
 
 def znacajkaDaNe(colName):
     print(colName)
-    dataVrijeme = data.groupby(colName).groups
-    for key in dataVrijeme:
+    dataColumn = data.groupby(colName).groups
+    for key in dataColumn:
         print(key)
         da, ne = 0, 0
-        for index in list(dataVrijeme[key]):
+        for index in list(dataColumn[key]):
             if data.values[index, 5] == 'da':
                 da += 1
             else:
